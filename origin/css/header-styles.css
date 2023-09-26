@@ -1,0 +1,32 @@
+/* ------------------------------- Header styles ------------------------------- */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: var(--dark-color);
+}
+
+.header-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-container__nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-container__a {
+    text-decoration: none;
+    font-family: "Jost", "Tahoma";
+    color: var(--light-color);
+    transition: color 0.4s ease-in-out;
+}
+
+.header-container__btn:hover {
+    background-color: var(--lilac-color);
+} 

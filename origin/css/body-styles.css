@@ -1,0 +1,92 @@
+/* Fluid design by Trys Mudford */
+/* @link https://utopia.fyi */
+/* ------------------------------- Custom properties ------------------------------- */
+:root {
+    --dark-color: #111;
+    --light-color: #f2f2f2;
+    --lilac-color: #D29BFD;
+    --orange-color: #ef652a;
+    --blue-color: #1c88c7;
+    --yellow-color: #ffda3e;
+    --green-color: #80bc01;
+}
+
+/* ------------------------------- Fonts ------------------------------- */
+@font-face {
+    font-family: "Jost";
+    src: url(../fonts/Jost-Regular.ttf);
+}
+
+/* ------------------------------- Font size fluid design ------------------------------- */
+html {
+    font-size: calc(12px + (16 - 12) * ((100vw - 300px) / (1400 - 300)));
+}
+
+/* ------------------------------- Body styles ------------------------------- */
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    padding: 1.5rem;
+    animation: animation-home 2s ease-in-out;
+}
+
+.main-container__h1,
+.main-container__p {
+    font-family: "Jost", "Tahoma";
+    text-align: center;
+    color: var(--light-color);
+}
+
+.main-container__h1--color {
+    color: var(--dark-color);
+}
+
+.main-container__img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+}
+
+.home {
+    background: linear-gradient(180deg, #111, #800040, #6d0c2e);
+}
+
+.html {
+    background-color: var(--orange-color);
+}
+
+.css {
+    background-color: var(--blue-color);
+}
+
+.js {
+    background-color: var(--yellow-color);
+}
+
+.sql {
+    background-color: var(--light-color);
+}
+
+.node {
+    background-color: var(--green-color);
+}
+
+.end {
+    background-color: var(--dark-color);
+}
+
+
+/* ------------------------------- Animations ------------------------------- */
+@keyframes animation-home {
+    0% {
+        transform: translateY(3rem);
+        opacity: 0;
+    } 100% {
+        opacity: 1;
+    }
+}
